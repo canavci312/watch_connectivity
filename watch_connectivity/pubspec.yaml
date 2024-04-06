@@ -3,8 +3,8 @@ description: Wrapper for WatchConnectivity on iOS and Wearable APIs on Android
 version: 0.1.6
 homepage: https://github.com/Rexios80/watch_connectivity/tree/master/watch_connectivity
 
-environment:
-  sdk: ">=2.15.1 <4.0.0"
+environment:  
+  sdk: ">=3.1.5 <4.0.0"
   flutter: ">=2.5.0"
 
 dependencies:

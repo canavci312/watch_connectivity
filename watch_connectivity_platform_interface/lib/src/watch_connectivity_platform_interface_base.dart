@@ -37,10 +37,8 @@ abstract class WatchConnectivityBase {
     switch (call.method) {
       case 'didReceiveMessage':
         _messageStreamController.add(Map<String, dynamic>.from(call.arguments));
-        break;
       case 'didReceiveApplicationContext':
         _contextStreamController.add(Map<String, dynamic>.from(call.arguments));
-        break;
       default:
         throw UnimplementedError('${call.method} not implemented');
     }

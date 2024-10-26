@@ -90,4 +90,8 @@ abstract class WatchConnectivityBase {
   Future<void> updateApplicationContext(Map<String, dynamic> context) {
     return channel.invokeMethod('updateApplicationContext', context);
   }
+    /// Start the watch app
+  Future<void> startWatchApp() {
+    return channel.invokeMethod('startWatchApp');
+  }
 }

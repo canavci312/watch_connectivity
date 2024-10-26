@@ -84,7 +84,7 @@ public class SwiftWatchConnectivityPlugin: NSObject, FlutterPlugin, WCSessionDel
     
     public func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String: Any]) {
                    DispatchQueue.main.async { [weak self] in
-        channel.invokeMethod("didReceiveApplicationContext", arguments: applicationContext)
+         self?.channel.invokeMethod("didReceiveApplicationContext", arguments: applicationContext)
     }
     }
 }
